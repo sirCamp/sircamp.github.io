@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,53 +7,35 @@
   <title>Parallax Template - Materialize</title>
 
   <!-- CSS  -->
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-
-  <div class="navbar-fixed">
-    <nav class="white" role="navigation">
-      <div class="container">
-        <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-          <ul class="right">
-            <li><i class="mdi-communication-contacts left" style="color:black;"></i><a href="#">Contact</a></li>
-            <li><i class="mdi-social-school left"style="color:black;"></i><a href="#">Project</a></li>
-          </ul>
-
-          <ul id="nav-mobile" class="side-nav">
-            <li><i class="mdi-communication-contacts left"style="color:black;"></i><a href="#">Contact</a></li>
-            <li><i class="mdi-social-school left"style="color:black;"></i><a href="#">Project</a></li>
-          </ul>
-          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-        </div>
-      </div>
-    </nav>
-  </div>
-
-  <div class="hero parallax-effect">
+  <nav class="white" role="navigation">
     <div class="container">
-      <div class="hero-content">
-        
-        <div class="col s2">
-          <img src="images/profile.jpg" alt="" class="circle responsive-img">
-        </div>
-        <div class="col s10">
-          <h1>SirCamp Repository</h1>
-        </div>
+      <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+        <ul class="right">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
       </div>
     </div>
-  </div>
-
+  </nav>
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">sirCamp Projects</h1>
+        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
         <div class="row center">
-          <h5 class="header col s12 light">This page explain and specify the sirCamp Projects</h5>
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
         </div>
         <br><br>
 
@@ -65,9 +48,8 @@
   <div class="container">
     <div class="section">
 
-
       <!--   Icon Section   -->
-     <!-- <div class="row">
+      <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="mdi-image-flash-on"></i></h2>
@@ -94,14 +76,14 @@
             <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
           </div>
         </div>
-      </div>-->
+      </div>
 
     </div>
   </div>
 
 
   <div class="parallax-container valign-wrapper">
-    <!--<div class="section no-pad-bot">
+    <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
           <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
@@ -136,15 +118,13 @@
     </div>
     <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 3"></div>
   </div>
--->
+
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">Mí ana hyóla anwavë, huo lá occo lindalë artaquetta. Wén vírë ambalë nalanta at, aica tenna hyóla en fas. Nat má rotelë cuivië tellaurë. Tir axan tulma sulier nó, na urwa hecil orosta nís. Cu pica yelma tyávë apa, cor rá lindë lenca, nalda ambalë ar lis. Epë cotë norna sanda vá, en úrë anna heri.
-
-Pio cé eques manwa, nu fëa ontarë orofarnë. To orosta antorya not, ilma anwavë carcassë aro uë. Torma hopassë tur oi. Lá línë cotumo nur. Nu pica tárië namna can, us ehtë melissë íta. Aro na ollo maquetta, fánë cemna hísië ría cu. Fion sanga ataqua nir vá.</p>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
 
 
         </div>
@@ -170,7 +150,7 @@ Pio cé eques manwa, nu fëa ontarë orofarnë. To orosta antorya not, ilma anwa
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="#">SirCamp</a>
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
   </footer>
@@ -178,8 +158,9 @@ Pio cé eques manwa, nu fëa ontarë orofarnë. To orosta antorya not, ilma anwa
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
+  <script src="../../bin/materialize.js"></script>
   <script src="js/init.js"></script>
 
   </body>
 </html>
+
