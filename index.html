@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="sircamp">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>SirCamp - Projects Page</title>
+  
+  <title>SirCamp - StefanoCampese - Stefano Campese</title>
 
   <!-- CSS  -->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -11,23 +10,31 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
+  <!-- SEO -->
+  <link rel="author" href="https://plus.google.com/+StefanoCampese">
   <meta name="theme-color" content="#4db6ac">
+  <meta name="description" content="My name is Stefano, i've a bachelor degree in computer science. I graduated in University of Padua on  Febrary 2014.This page serves to explain my projects and projects in which I participated. I this i moment i have more skills in JS, Java and PHP. I'm a web developer specializing in php, java, javascript primarily with MVC and MVVM, my nickname is SirCamp">
+  <meta name="keywords" content="developer developers programmatore programmatore web php java javascript angular codeigniter laravel web developer stefano campese stefano campese sandrigo vicenza sirCamp sir camp sir_camp">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+  <meta name="author" content="Stefano Campese sircamp">
 </head>
-<body>
+<body ng-controller="mainController" >
 
   <div class="navbar-fixed">
     <nav class="white" role="navigation">
       <div class="container">
         <div class="nav-wrapper">
           <div class="col s12">
-            <a href="/index.html" class="brand-logo"><i class="mdi-action-home"></i> Home</a>
+            <a ng-href="#/" class="brand-logo"><i class="mdi-action-home"></i> Home</a>
             <ul class="right hide-on-med-and-down">
-              <li><i class="mdi-communication-contacts left"style="color:black;"></i><a href="/contacts.html">Contact</a></li>
-              <li><i class="fa fa-github left"style="color:black;"></i><a href="https://github.com/sirCamp">Projects</a></li>
+              <li><i class="mdi-communication-contacts left"style="color:black;"></i><a ng-href="#/contact">Contact</a></li>
+              <li><i class="fa fa-github left"style="color:black;"></i><a ng-href="https://github.com/sirCamp">Projects</a></li>
             </ul>
             <ul id="nav-mobile" class="side-nav">
-              <li><i class="mdi-communication-contacts left"style="color:black;"></i><a href="/contacts.html">Contact</a></li>
-             <li><i class="fa fa-github left"style="color:black;"></i><a href="https://github.com/sirCamp">Projects</a></li>
+              <li><i class="mdi-communication-contacts left"style="color:black;"></i><a ng-href="#/contact">Contact</a></li>
+             <li><i class="fa fa-github left"style="color:black;"></i><a ng-href="https://github.com/sirCamp">Projects</a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
           </div>
@@ -36,59 +43,8 @@
     </nav>
   </div>
 
-  <div class="hero parallax-effect">
-    <div class="container">
-      <div class="hero-content">
-        
-        <div class="col s2">
-          <img src="images/profile.jpg" alt="" class="circle responsive-img">
-        </div>
-        <div class="col s10">
-          <h1>SirCamp</h1>
-        </div>
-      </div>
-    </div>
-  </div>
 
-
-
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2"><i class="mdi-social-group left"style="color:#4db6ac;"></i>Who I am</h1>
-       
-          <p style="color:black;">
-            My name is Stefano, i am a developer who like to keep up to date on new languages and new Framework.<br>
-            I've a bachelor degree in computer science, i graduated in University of Padua on Febrary 2014.
-            The title of my thesis is:<br>
-            <blockquote>
-              <strong>
-                Analisi ed implementazione della sicurezza perimetrale aziendale tramite l'utilizzo di componenti del sistema operativo Linux.
-              </strong>
-            </blockquote>
-            If you want to read and download my thesis click <a href="documents/thesis/Thesis.pdf" target="_blankk" >here</a><br>
-
-            This page serves to explain my projects and projects in which I participated.<br>
-
-            I this i moment i have more skills in JS, Java and PHP.<br>
-
-            I've used many Framework like:
-            <ul>
-              <li>Meteor.js</li>
-              <li>Angular.js</li>
-              <li>Ember.js</li>
-              <li>Codeigniter</li>
-              <li>Laravel 4 and Laravel 5</li>
-              <li>Phalcon PHP</li>
-              <li>Boostrap CSS</li>
-              <li>Materialize CSS</li>
-              <li>JHipster Java and Angular Framework</li>
-            </ul>
-          </p>
-        
-        <br><br>
-   
-  </div>
-
+<div ng-view></div>
 
   
   <footer class="page-footer teal">
@@ -110,11 +66,11 @@
         <div class="col l3 offset-l3  m3 offset-m3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="https://www.facebook.com/StefanoCampese"><i class="fa fa-facebook-official" style="margin-right:10px;"></i>Facebook</a></li>
-            <li><a class="white-text" href="http://it.linkedin.com/pub/stefano-campese/83/649/291/en"><i class="fa fa-linkedin" style="margin-right:10px;"></i>Linkedin</a></li>
-            <li><a class="white-text" href="https://twitter.com/Sir_Campy?lang=it"><i class="fa fa-twitter" style="margin-right:10px;"></i>Twitter</a></li>
-            <li><a class="white-text" href="https://github.com/sirCamp"><i class="fa fa-github" style="margin-right:10px;"></i>Github</a></li>
-            <li><a class="white-text" href="https://sourceforge.net/u/sircampy/profile/"><i class="fa fa-github-alt" style="margin-right:10px;"></i>SourceForge</a></li>
+            <li><a class="white-text" ng-href="https://www.facebook.com/StefanoCampese"><i class="fa fa-facebook-official" style="margin-right:10px;"></i>Facebook</a></li>
+            <li><a class="white-text" ng-href="http://it.linkedin.com/pub/stefano-campese/83/649/291/en"><i class="fa fa-linkedin" style="margin-right:10px;"></i>Linkedin</a></li>
+            <li><a class="white-text" ng-href="https://twitter.com/Sir_Campy?lang=it"><i class="fa fa-twitter" style="margin-right:10px;"></i>Twitter</a></li>
+            <li><a class="white-text" ng-href="https://github.com/sirCamp"><i class="fa fa-github" style="margin-right:10px;"></i>Github</a></li>
+            <li><a class="white-text" ng-href="https://sourceforge.net/u/sircampy/profile/"><i class="fa fa-github-alt" style="margin-right:10px;"></i>SourceForge</a></li>
           </ul>
         </div>
       </div>
@@ -130,6 +86,8 @@
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
+  <script src="js/angular/angular.min.js"></script>
+  <script src="js/angular/angular-route.min.js"></script>
   <script src="js/init.js"></script>
 
   </body>
