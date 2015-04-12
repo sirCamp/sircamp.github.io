@@ -44,3 +44,19 @@ blockquote{
 	color: #4db6ac;
 	font-size: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+
+	.fa-logo{
+		font-size:25px;
+	}
+
+	.fa-normalize{
+		margin-top: 20px;
+		font-size: 20px;
+	}
+
+	i{
+		font-size: 20px;
+	}
+}

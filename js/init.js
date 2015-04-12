@@ -1,8 +1,9 @@
 (function($){
   $(function(){
 
-    $('.button-collapse').sideNav();
+    $('.button-collapse').sideNav({closeOnClick: true });
     $('.parallax').parallax();
+    //$('#contact_link').click(function(){$('.button-collapse').sideNav('hide')});
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
@@ -40,6 +41,10 @@ sircamp.config(function($routeProvider) {
 sircamp.controller('mainController', function($scope) {
 
 	$scope.message = 'Everyone come and see how good I look!';
+    $scope.hideNavBar = function(){
+        $('.button-collapse').sideNav('hide');
+        console.log('ciao');
+    }
 });
 
 
